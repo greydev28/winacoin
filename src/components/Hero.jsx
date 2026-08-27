@@ -2,10 +2,22 @@ import { externalLinks } from '../data/site'
 import { Icon } from './Icon'
 import { motion, useInView } from 'motion/react'
 import { useRef } from 'react'
+import { useState, useEffect } from 'react'
+          
 
 export function Hero({ heroImage, logo }) {
   const ref = useRef(null)
   const inView = useInView(ref, { margin: '-100px' })
+
+  const heroWords = ["WINA!", "WINNER"];
+          const [activeIdx, setActiveIdx] = useState(0);
+
+          useEffect(() => {
+            const interval = setInterval(() => {
+              setActiveIdx((prev) => (prev === 0 ? 1 : 0));
+            }, 2000);
+            return () => clearInterval(interval);
+          }, []);
 
   return (
     <section id="home" className="relative isolate overflow-hidden pt-32 sm:pt-36">
@@ -24,8 +36,21 @@ export function Hero({ heroImage, logo }) {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 1, delay: 0.15 }}
         >
-          <p className="mb-4 text-xs font-extrabold uppercase tracking-[.24em] text-fuchsia-400">WIN.CO DAO • BSC MEME COIN</p>
-          <h1 className="font-display text-[clamp(4rem,10vw,7rem)] font-black leading-[.82] tracking-[-.07em]">BE A <span className="block bg-linear-to-r from-fuchsia-300 via-fuchsia-500 to-violet-500 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(168,60,255,.35)]">WINA!</span></h1>
+          <p className="mb-4 text-xs font-extrabold uppercase tracking-[.24em] text-fuchsia-400">WIN.CO DAO • BSC MEME COIN</p>      
+          <h1 className="font-display text-[clamp(4rem,10vw,7rem)] font-black leading-[.82] tracking-[-.07em]">
+            BE A{" "}
+            <motion.span
+              key={heroWords[activeIdx]}
+              className="block bg-linear-to-r from-fuchsia-300 via-fuchsia-500 to-violet-500 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(168,60,255,.35)]"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -40 }}
+              transition={{ duration: 0.5 }}
+            >
+              {heroWords[activeIdx]}
+            </motion.span>
+          </h1>
+     
           <p className="mt-7 text-base font-extrabold tracking-wide text-white sm:text-lg">WINNER TODAY, LEGEND TOMORROW.</p>
           <p className="mx-auto mt-3 max-w-xl text-sm leading-7 text-zinc-400 lg:mx-0">A deflationary token created by Sir Talus for the Win.co DAO ecosystem to drive blockchain education, adoption, interaction and fun.</p>
           <div id="buy" className="mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">

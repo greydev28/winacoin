@@ -13,7 +13,7 @@ const icons = {
   coin: CircleDollarSign, coins: Coins, external: ExternalLink, flame: Flame, game: Gamepad2,
   github: Github, hand: HandCoins, lock: LockKeyhole, menu: Menu, telegram: TelegramLogo,
   rocket: Rocket, shield: ShieldCheck, smartphone: Smartphone, sparkles: Sparkles,
-  wallet: WalletCards, x: XLogo, zap: Zap,
+  wallet: WalletCards, x: XLogo, zap: Zap, real_x: XIcon,
 }
 
 export function Icon({ name, size = 20, strokeWidth = 1.8, className = '' }) {

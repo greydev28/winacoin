@@ -32,7 +32,7 @@ export function Navbar({ logo }) {
         </nav>
 
         <button type="button" className="rounded-lg p-2 text-white lg:hidden" onClick={() => setOpen(v => !v)} aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open}>
-          <Icon name={open ? 'x' : 'menu'} size={27} />
+          <Icon name={open ? 'real_x' : 'menu'} size={27} />
         </button>
       </div>
 
