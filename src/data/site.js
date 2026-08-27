@@ -17,8 +17,7 @@ export const externalLinks = {
     "https://dexscreener.com/bsc/0xAA6b2AcBAd2A7Ff08226d50acdD63eb0c216f6fd",
   firescreener:
     "https://www.firescreener.com/bsc/0x23be6b07e8cd735f291f390a5fb1392bedf6879c",
-  whitepaper: "#",
-  prukLock: "#",
+  contract: "0x23be6B07E8cd735F291F390A5FB1392bEdf6879C",
 };
 
 export const socials = [

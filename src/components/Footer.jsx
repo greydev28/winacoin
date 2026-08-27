@@ -9,9 +9,9 @@ export function Footer({ logo }) {
     >
       <div className="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         {/* Responsive link/logo/links row */}
-        <div className="flex flex-col sm:flex-row items-center gap-7 sm:gap-10 justify-center font-display mb-10 sm:mb-12">
+        <div className="flex sm:flex-row items-center gap-7 sm:gap-10 justify-center font-display mb-10 sm:mb-12">
           <a
-            href={externalLinks.buy}
+            href={externalLinks.contract}
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl sm:text-2xl text-fuchsia-300 hover:text-fuchsia-500 font-display transition mb-3 sm:mb-0"
@@ -34,7 +34,7 @@ export function Footer({ logo }) {
         </div>
 
         {/* Responsive socials */}
-        <div className="flex justify-center gap-5 sm:gap-6 mb-10 sm:mb-12">
+        <div className="flex justify-center items-center gap-5 sm:gap-6 mb-10 sm:mb-12">
           <a
             href={externalLinks.telegram}
             target="_blank"
