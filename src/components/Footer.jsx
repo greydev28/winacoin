@@ -3,16 +3,60 @@ import { Icon } from './Icon'
 
 export function Footer({ logo }) {
   return (
-    <footer id="community" className="border-t border-fuchsia-400/15 bg-[#05030b]">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 md:grid-cols-2 lg:grid-cols-[1.4fr_.8fr_1fr_.8fr] lg:px-10">
-        <div><a href="#home" className="flex items-center gap-2.5"><img src={logo} alt="WINA logo" className="h-10 w-10 rounded-full object-cover" /><span className="font-display text-2xl font-black">WINA</span></a><p className="mt-5 max-w-xs text-xs leading-6 text-zinc-500">A deflationary meme coin built for education, adoption and fun within the Win.co DAO ecosystem.</p><small className="mt-8 block text-[10px] text-zinc-600">© 2025 WINA COIN. All rights reserved.</small></div>
-        <FooterColumn title="QUICK LINKS">{navLinks.map(link => <FooterLink key={link.href} href={link.href}>{link.label}</FooterLink>)}<FooterLink href={externalLinks.whitepaper}>Whitepaper</FooterLink></FooterColumn>
-        <FooterColumn title="OFFICIAL LINKS">{socials.map(s => <a key={s.detail} href={s.href} className="group mb-4 flex items-center gap-3 text-xs text-zinc-400 transition hover:text-fuchsia-300"><span className="grid h-8 w-8 place-items-center rounded-full border border-white/10 bg-white/3"><Icon name={s.icon} size={15} /></span><span>{s.label}<small className="block text-[10px] text-zinc-600 group-hover:text-zinc-500">{s.detail}</small></span></a>)}</FooterColumn>
-        <FooterColumn title="RESOURCES"><FooterLink href={externalLinks.whitepaper} icon="book">Whitepaper</FooterLink><FooterLink href={externalLinks.firescreener} icon="coins">Contract (BSC)</FooterLink><FooterLink href={externalLinks.dexScreener} icon="chart">DexScreener</FooterLink><FooterLink href={externalLinks.prukLock} icon="lock">Pink Lock</FooterLink></FooterColumn>
+    <footer
+      id="community"
+      className="border-t border-fuchsia-400/15 bg-gradient-to-tr from-[#060316] via-[#121028] to-[#05030b]"
+    >
+      <div className="max-w-2xl mx-auto py-16">
+        <div className="flex items-center gap-10 justify-center font-display mb-12">
+          <a
+            href={externalLinks.buy}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl text-fuchsia-300 hover:text-fuchsia-500 font-display transition"
+          >
+            Contract
+          </a>
+          <img
+            src={logo}
+            alt="WINA coin"
+            className="h-20 w-20 rounded-full object-cover ring-1 ring-fuchsia-300/50 shadow-[0_0_32px_rgba(168,60,255,.25)]"
+          />
+          <a
+            href={externalLinks.dexScreener}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl text-fuchsia-300 hover:text-fuchsia-500 font-display transition"
+          >
+            Chart
+          </a>
+        </div>
+
+        <div className="flex justify-center gap-6 mb-12">
+          <a
+            href={externalLinks.telegram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="grid h-12 w-12 place-items-center rounded-full bg-fuchsia-700/70 hover:bg-fuchsia-500 transition shadow-lg"
+            aria-label="Telegram"
+          >
+            <Icon name="telegram" size={28} className="text-white" />
+          </a>
+          <a
+            href={externalLinks.xMain}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="grid h-12 w-12 place-items-center rounded-full bg-fuchsia-700/70 hover:bg-fuchsia-500 transition shadow-lg"
+            aria-label="X"
+          >
+            <Icon name="x" size={28} className="text-white" />
+          </a>
+        </div>
+
+        <div className="text-center text-base text-zinc-500 font-medium">
+          © {new Date().getFullYear()} Wina Coin. All rights reserved.
+        </div>
       </div>
     </footer>
   )
 }
-
-function FooterColumn({ title, children }) { return <div><h4 className="mb-5 text-[11px] font-black tracking-[.15em] text-fuchsia-400">{title}</h4>{children}</div> }
-function FooterLink({ href, children, icon }) { return <a href={href} rel="noopener" target="_blank" className="mb-3 flex items-center gap-2 text-xs text-zinc-500 transition hover:text-fuchsia-300">{icon && <Icon name={icon} size={14} />}{children}</a> }
