@@ -33,7 +33,7 @@ export function Liquidity() {
       >
         <p className="mb-3 uppercase tracking-[.24em] text-fuchsia-400 font-display font-black sm:text-2xl">LIQUIDITY</p>
         <p className="mt-5 max-w-2xl text-sm leading-7 text-zinc-400">
-          To ensure a safe and trusted trading experience, the LP of WINA has been locked using Pink Lock and removed (burnt). This prevents anyone from tampering with the pool.
+          To ensure a safe and trusted trading experience, the LP of WINA has been locked using Pink Lock and renouced (burnt🔥). This prevents anyone from tampering with the pool.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <div className="rounded-xl border border-fuchsia-400/30 bg-white/2.5 px-5 py-4">
