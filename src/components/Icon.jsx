@@ -26,8 +26,8 @@ import {
   XIcon,
   Zap,
   Network,
-  BadgePercent,
-  LeafTradeIcon
+  BadgePercent
+
 } from 'lucide-react'
 import { XLogo, TelegramLogo, } from "@phosphor-icons/react";
 
