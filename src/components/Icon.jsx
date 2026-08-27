@@ -8,7 +8,7 @@ import {
   CircleDollarSign,
   Coins,
   ExternalLink,
-  FileCode2,
+  FileCode,
   Flame,
   Gamepad2,
   Github,
@@ -63,7 +63,7 @@ const icons = {
   github: Github, hand: HandCoins, lock: LockKeyhole, menu: Menu, telegram: TelegramLogo,
   rocket: Rocket, shield: ShieldCheck, smartphone: Smartphone, sparkles: Sparkles, shopping: ShoppingCart,
   wallet: WalletCards, x: XLogo, zap: Zap, real_x: XIcon, network: Network,
-  leafpay: LeafTradeIcon,filecode: FileCode2,
+  leafpay: LeafTradeIcon,filecode: FileCode,
 
 }
 
