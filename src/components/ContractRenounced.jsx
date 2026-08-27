@@ -2,7 +2,7 @@ import { Icon } from './Icon'
 import { useRef } from 'react'
 import { motion, useInView } from 'motion/react'
 
-export function ContractRounced() {
+export function ContractRenounced() {
   const ref = useRef(null)
   const inView = useInView(ref, { margin: '-100px' })
 
