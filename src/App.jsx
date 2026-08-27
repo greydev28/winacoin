@@ -1,6 +1,7 @@
 import logo from './assets/wina-logo.jpeg'
 import heroImage from './assets/wina-hero.jpeg'
 import communityImage from './assets/wina-community.jpeg'
+
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { About } from './components/About'
@@ -11,22 +12,32 @@ import { Utilities } from './components/Utilities'
 import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
 import { ContractRenounced } from './components/ContractRenounced'
-import {contractImage} from './assets/wina-contract-renounced.svg'
+
+import contractImage from './assets/wina-contract-renounced.svg'
 
 export default function App() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-[#07030f] text-white selection:bg-fuchsia-500/30">
       <Navbar logo={logo} />
+
       <main>
         <Hero heroImage={heroImage} logo={logo} />
+
         <About logo={logo} />
+
         <Liquidity />
-        <ContractRenounced  contractImage = {contractImage}/>
-        <Tokenomics logo={logo}/>
+
+        <ContractRenounced contractImage={contractImage} />
+
+        <Tokenomics logo={logo} />
+
         <Roadmap background={communityImage} />
+
         <Utilities />
+
         <FAQ />
       </main>
+
       <Footer logo={logo} />
     </div>
   )
