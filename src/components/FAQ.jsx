@@ -59,7 +59,7 @@ export function FAQ() {
         <SectionTitle
           eyebrow="FAQ"
           title="Frequently Asked Questions"
-          description="Quick answers for holders, new buyers and community members exploring the WINA ecosystem."
+          description="Quick answers for holders, new buyers and community members exploring the win.co DAO ecosystem."
         />
 
         <div className="mx-auto grid max-w-5xl gap-4">
