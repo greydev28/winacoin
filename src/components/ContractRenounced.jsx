@@ -34,7 +34,7 @@ export function ContractRounced() {
           {/* Contract Icon */}
           <div className="mb-3 grid h-20 w-20 place-items-center rounded-2xl border border-fuchsia-300/30 bg-fuchsia-500/10">
             <Icon
-              name="file-code"
+              name="filecode"
               size={48}
               className="text-fuchsia-200"
             />

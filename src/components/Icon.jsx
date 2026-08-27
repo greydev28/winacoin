@@ -1,8 +1,33 @@
 import {
-  ArrowUpRight, BarChart3, BookOpen, CalendarDays, Check, ChevronDown, CircleDollarSign,
-  Coins, ExternalLink, Flame, Gamepad2, Github, HandCoins, LockKeyhole,
-  Menu, MessageCircle, Rocket, ShieldCheck, Smartphone, Sparkles, WalletCards, ShoppingCart,
-  X, XIcon, Zap, Network, BadgePercent
+  ArrowUpRight,
+  BarChart3,
+  BookOpen,
+  CalendarDays,
+  Check,
+  ChevronDown,
+  CircleDollarSign,
+  Coins,
+  ExternalLink,
+  FileCode2,
+  Flame,
+  Gamepad2,
+  Github,
+  HandCoins,
+  LockKeyhole,
+  Menu,
+  MessageCircle,
+  Rocket,
+  ShieldCheck,
+  Smartphone,
+  Sparkles,
+  WalletCards,
+  ShoppingCart,
+  X,
+  XIcon,
+  Zap,
+  Network,
+  BadgePercent,
+  LeafTradeIcon
 } from 'lucide-react'
 import { XLogo, TelegramLogo, } from "@phosphor-icons/react";
 
@@ -38,7 +63,7 @@ const icons = {
   github: Github, hand: HandCoins, lock: LockKeyhole, menu: Menu, telegram: TelegramLogo,
   rocket: Rocket, shield: ShieldCheck, smartphone: Smartphone, sparkles: Sparkles, shopping: ShoppingCart,
   wallet: WalletCards, x: XLogo, zap: Zap, real_x: XIcon, network: Network,
-  leafpay: LeafTradeIcon,
+  leafpay: LeafTradeIcon,filecode: FileCode2,
 
 }
 
