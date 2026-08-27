@@ -13,8 +13,6 @@ import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
 import { ContractRenounced } from './components/ContractRenounced'
 
-import contractImage from './assets/wina-contract-renounced.svg'
-
 export default function App() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-[#07030f] text-white selection:bg-fuchsia-500/30">
@@ -27,7 +25,7 @@ export default function App() {
 
         <Liquidity />
 
-        <ContractRenounced contractImage={contractImage} />
+        <ContractRenounced />
 
         <Tokenomics logo={logo} />
 
