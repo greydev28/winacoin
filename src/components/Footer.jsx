@@ -9,29 +9,40 @@ export function Footer({ logo }) {
     >
       <div className="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         {/* Responsive link/logo/links row */}
-        <div className="flex sm:flex-row items-center gap-7 sm:gap-10 justify-center font-display mb-10 sm:mb-12">
+        <div className="flex sm:flex-row items-center gap-4 md:gap-7 justify-center font-display mb-10 sm:mb-12">
           <a
             href={externalLinks.contract}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xl sm:text-2xl text-fuchsia-300 hover:text-fuchsia-500 font-display transition mb-3 sm:mb-0"
+            className="flex items-center gap-2 text-xl sm:text-2xl text-fuchsia-300 hover:text-fuchsia-500 font-display font-semibold transition underline-offset-4 hover:underline"
           >
             Contract
           </a>
-          <img
-            src={logo}
-            alt="WINA coin"
-            className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover ring-1 ring-fuchsia-300/50 shadow-[0_0_32px_rgba(168,60,255,.25)] mb-3 sm:mb-0"
-          />
+
+          <span className="relative flex items-center justify-center">
+            <span className="absolute inset-0 blur-lg rounded-full bg-fuchsia-400/40 animate-pulse opacity-50" />
+            <img
+              src={logo}
+              alt="WINA coin"
+              className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover ring-2 ring-fuchsia-300/70 shadow-[0_0_56px_0_rgba(168,60,255,.48)] border-4 border-fuchsia-900/60 z-10 transition-transform hover:scale-105 duration-300"
+            />
+            {/* Decorative sparkles */}
+            <span className="absolute -top-2 -right-2 h-4 w-4 bg-fuchsia-300 rounded-full blur-sm opacity-60 animate-bounce" />
+            <span className="absolute bottom-0 left-0 h-3 w-3 bg-fuchsia-500 rounded-full blur-[2px] opacity-50 animate-ping" />
+          </span>
+
+          {/* Right: Chart Link */}
           <a
             href={externalLinks.dexScreener}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xl sm:text-2xl text-fuchsia-300 hover:text-fuchsia-500 font-display transition"
+            className="flex items-center gap-2 text-xl sm:text-2xl text-fuchsia-300 hover:text-fuchsia-500 font-display font-semibold transition underline-offset-4 hover:underline"
           >
             Chart
+            
           </a>
         </div>
+  
 
         {/* Responsive socials */}
         <div className="flex justify-center items-center gap-5 sm:gap-6 mb-10 sm:mb-12">
