@@ -42,10 +42,10 @@ export function Liquidity() {
     className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-xl border border-fuchsia-500 bg-linear-to-r from-fuchsia-950/10 to-transparent p-5"
   >
     <div className="flex items-center gap-4">
-      <Icon name="lock" size={24} className="text-fuchsia-400 shrink-0" />
+          <p className="mb-3 uppercase tracking-[.24em] text-fuchsia-400 font-display font-black sm:text-2xl">CONTRACT RENOUNCED</p>
       <div>
-        <h4 className="text-sm font-bold text-zinc-200">Unbreakable LP Lock</h4>
-        <p className="text-xs text-zinc-400 mt-0.5">WINA liquidity pool tokens are entirely restricted from withdrawal mechanisms.</p>
+        
+        <p className="text-xs text-zinc-400 mt-0.5">On October 16, 2025, the WINA Coin smart contract was renounced as part of the project's commitment to transparency, decentralization, and community trust. Contract renunciation removes the deployer's ownership privileges from the token contract, significantly reducing the possibility of unilateral changes to important owner-controlled functions. This step demonstrates WINA's intention to operate with greater transparency and give the community increased confidence in the integrity of the token. The WINA contract is deployed on BNB Smart Chain, with the verified contract publicly available for blockchain verification. Independent token-security data currently reports the contract's ownership as likely renounced.</p>
       </div>
     </div>
     <div className="shrink-0 self-start sm:self-center">
@@ -63,7 +63,7 @@ export function Liquidity() {
     <div className="flex items-center gap-4">
       <Icon name="flame" size={24} className="text-orange-400 shrink-0" />
       <div>
-        <h4 className="text-sm font-bold text-zinc-200">Permanently Burned</h4>
+        <h4 className="text-sm font-bold text-zinc-200">Permanently Burned</h4>m
         <p className="text-xs text-zinc-400 mt-0.5">Contract ownership rights are completely removed and destroyed forever.</p>
       </div>
     </div>
