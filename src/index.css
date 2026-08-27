@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #07030f; font-family: var(--font-sans); }
+section[id] { scroll-margin-top: 80px; }
+
+.stars {
+  background-image: radial-gradient(circle, rgba(216, 180, 254, .7) 1px, transparent 1px);
+  background-size: 90px 90px;
+}
+
+.float-animation { animation: wina-float 3.5s ease-in-out infinite; }
+.orbit-line { transform: rotate(-28deg); animation: orbit-drift 8s ease-in-out infinite; }
+
+.donut {
+  background: conic-gradient(#8f30ff 0 20%, #3262e9 20% 75%, #9b36ff 75% 100%);
+  position: relative;
+}
+.donut::after {
+  content: '';
+  position: absolute;
+  inset: 30%;
+  border-radius: 9999px;
+  background: #0d0718;
+}
+
+@keyframes wina-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(24px); }
+}
+@keyframes orbit-drift {
+  0%, 100% { transform: rotate(-28deg) translateY(0); }
+  50% { transform: rotate(-24deg) translateY(-8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .float-animation, .orbit-line { animation: none; }
+}
