@@ -36,7 +36,6 @@ export function Hero({ heroImage, logo }) {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 1, delay: 0.15 }}
         >
-          <p className="mb-4 text-xs font-extrabold uppercase tracking-[.24em] text-fuchsia-400">WIN.CO DAO • BSC MEME COIN</p>      
           <h1 className="font-display text-[clamp(4rem,10vw,7rem)] font-black leading-[.82] tracking-[-.07em]">
             BE A{" "}
             <motion.span
@@ -82,7 +81,7 @@ export function Hero({ heroImage, logo }) {
           </div>
           <div className="mt-7 flex flex-wrap justify-center gap-x-5 gap-y-3 text-[10px] font-extrabold text-zinc-400 lg:justify-start">
             <span className="inline-flex items-center gap-2"><Icon name="coin" size={15} className="text-amber-300" /> BINANCE SMART CHAIN</span>
-            <span className="inline-flex items-center gap-2"><Icon name="lock" size={15} className="text-fuchsia-300" /> LP LOCKED 91 DAYS</span>
+            <span className="inline-flex items-center gap-2"><Icon name="lock" size={15} className="text-fuchsia-300 uppercase" /> LOCK AND BURNT🔥</span>
             <span className="inline-flex items-center gap-2"><Icon name="shield" size={15} className="text-fuchsia-300" /> CONTRACT VERIFIED</span>
           </div>
         </motion.div>
@@ -95,7 +94,7 @@ export function Hero({ heroImage, logo }) {
         >
           <div className="absolute h-80 w-80 rounded-full bg-violet-600/30 blur-[100px]" />
           <img src={heroImage} alt="WINA coin hero artwork" className="relative w-full max-w-2xl rounded-4xl object-cover mix-blend-screen drop-shadow-[0_25px_80px_rgba(126,34,206,.28)]" />
-          <img src={logo} alt="WINA coin" className="float-animation absolute right-0 top-12 h-24 w-24 rounded-full object-cover ring-1 ring-fuchsia-300/50 shadow-[0_0_50px_rgba(168,60,255,.45)] sm:right-5" />
+        
           <div className="orbit-line absolute h-[72%] w-[70%] rounded-[50%] border-r border-dashed border-fuchsia-400/70" />
         </motion.div>
       </motion.div>

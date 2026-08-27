@@ -10,7 +10,7 @@ const allocations = [
   ['25% (250,000,000)', 'is allocated for marketing/ecosystem development'],
 ]
 
-export function Tokenomics() {
+export function Tokenomics({logo}) {
   const ref = useRef(null)
   const inView = useInView(ref, { margin: '-100px' })
 
@@ -26,7 +26,9 @@ export function Tokenomics() {
             transition={{ duration: 0.85, ease: [0.4, 0.12, 0.2, 1] }}
           >
             <div className="grid items-center gap-8 md:grid-cols-[220px_1fr]">
-              <div className="donut mx-auto grid h-52 w-52 place-items-center rounded-full"><span className="relative z-10 font-display text-4xl font-black">W</span></div>
+              <div className="donut mx-auto grid h-52 w-52 place-items-center rounded-full">
+              <img src={logo} alt="WINA coin" className="h-24 w-24 rounded-full object-cover ring-1 ring-fuchsia-300/50 shadow-[0_0_50px_rgba(168,60,255,.45)]" />
+              </div>
               <div className="space-y-5">
                 {allocations.map(([title, value, icon], i) => (
                   <div key={title} className="flex gap-3">

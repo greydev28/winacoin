@@ -31,10 +31,9 @@ export function Liquidity() {
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 45 }}
         transition={{ duration: 0.9, delay: 0.13, ease: [0.4, 0.12, 0.2, 1] }}
       >
-        <p className="mb-3 text-xs font-extrabold uppercase tracking-[.24em] text-fuchsia-400">LIQUIDITY</p>
-        <h2 className="font-display text-4xl font-black sm:text-5xl">SAFE. LOCKED. TRUSTED.</h2>
+        <p className="mb-3 uppercase tracking-[.24em] text-fuchsia-400 font-display font-black sm:text-2xl">LIQUIDITY</p>
         <p className="mt-5 max-w-2xl text-sm leading-7 text-zinc-400">
-          To ensure a safe and trusted trading experience, the LP of WINA has been locked using Pruk Lock and removed (burnt). This prevents anyone from tampering with the pool.
+          To ensure a safe and trusted trading experience, the LP of WINA has been locked using Pink Lock and removed (burnt). This prevents anyone from tampering with the pool.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <div className="rounded-xl border border-fuchsia-400/30 bg-white/2.5 px-5 py-4">

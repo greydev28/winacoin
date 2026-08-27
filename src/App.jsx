@@ -18,7 +18,7 @@ export default function App() {
         <Hero heroImage={heroImage} logo={logo} />
         <About logo={logo} />
         <Liquidity />
-        <Tokenomics />
+        <Tokenomics logo={logo}/>
         <Roadmap background={communityImage} />
         <Utilities />
       </main>

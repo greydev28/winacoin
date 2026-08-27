@@ -36,17 +36,24 @@ export function About({ logo }) {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 36 }}
           transition={{ duration: 0.88, delay: 0.07 }}
         >
-          <p className="mb-3 text-xs font-extrabold uppercase tracking-[.24em] text-fuchsia-400">ABOUT</p>
-          <h2 className="font-display text-4xl font-black sm:text-5xl">WINA COIN</h2>
-          <h3 className="mt-1 text-lg font-extrabold text-fuchsia-400">Detail Book</h3>
-          <div className="mt-6 space-y-4 text-sm leading-7 text-zinc-400">
-            <p>
-              Wina coin is a deflationary token created by Sir Talus for the Win.co DAO ecosystem to drive blockchain education, adoption, and enhance interaction and fun within the ecosystem. “Wina” is a pidgin English word that means “winner”.
-            </p>
-            <p>
-              Wina was launched on the BSC blockchain on 15 October 2025 at exactly 8pm WAT and is positioned to be among the top 10 meme coins by market capitalization.
-            </p>
+          <div className="flex flex-col items-center text-center">
+            <img
+              src={logo}
+              alt="WINA coin"
+              className="mb-5 h-24 w-24 rounded-full object-cover ring-1 ring-fuchsia-300/50 shadow-[0_0_50px_rgba(168,60,255,.45)]"
+            />
+            <h2 className="font-display text-2xl font-bold mb-4 text-white">WINA COIN</h2>
+            <div className="space-y-4 text-sm leading-7 text-zinc-400 max-w-lg mx-auto">
+              <p>
+                Wina coin is a deflationary token created by Sir Talus for the Win.co DAO ecosystem to drive blockchain education, adoption, and enhance interaction and fun within the ecosystem. “Wina” is a pidgin English word that means “winner”.
+              </p>
+              <p>
+                Launched on the Binance Smart Chain on 15 October 2025 at exactly 8pm WAT, Wina aims to be among the top 10 meme coins by market capitalization.
+              </p>
+            </div>
           </div>
+    
+     
         </motion.div>
         <motion.div
           className="rounded-2xl border border-fuchsia-400/35 bg-white/2.5 p-5 shadow-[inset_0_1px_rgba(255,255,255,.05)] sm:p-7"

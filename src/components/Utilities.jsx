@@ -5,7 +5,7 @@ import { useInView, motion } from 'motion/react'
 
 const production = [
   { title: 'WINA APP', text: 'Your all-in-one gateway to education, trading tools, community and rewards.', icon: 'smartphone' },
-  { title: 'LEEF PAY', text: 'Seamless crypto payments made simple, fast and secure.', icon: 'wallet' },
+  { title: 'LEEF PAY', text: 'Seamless crypto payments made simple, fast and secure.', icon: 'leafpay' },
 ]
 
 export function Utilities() {
