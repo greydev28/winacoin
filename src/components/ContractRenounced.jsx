@@ -50,11 +50,9 @@ export function ContractRenounced({contractImage}) {
             ease: [0.4, 0.12, 0.2, 1],
           }}
         >
-          <h2 className="mb-5 text-2xl font-bold tracking-wide">
-            CONTRACT RENOUNCED
-          </h2>
+         <p className="mb-3 uppercase tracking-[.24em] text-fuchsia-400 font-display font-black sm:text-2xl">CONTRACT RENOUNCED</p>
 
-          <p className="max-w-xl text-base leading-8 text-white/70 md:text-lg">
+          <p className="max-w-xl text-base leading-8 text-white/70 sm:text-2xl">
             On <strong>October 16, 2025</strong>, the WINA Coin smart
             contract was renounced as part of the project's commitment
             to transparency, decentralization, and community trust.
@@ -64,7 +62,7 @@ export function ContractRenounced({contractImage}) {
             owner-controlled functions.
           </p>
 
-          <p className="mt-5 max-w-xl text-base leading-8 text-white/70 md:text-lg">
+          <p className="mt-5 max-w-xl text-base leading-8 text-white/70 sm:text-2xl">
             This step demonstrates WINA's intention to operate with
             greater transparency and give the community increased
             confidence in the integrity of the token. The WINA contract
