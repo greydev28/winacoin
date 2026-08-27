@@ -10,6 +10,8 @@ import { Roadmap } from './components/Roadmap'
 import { Utilities } from './components/Utilities'
 import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
+import { ContractRenounced } from './components/ContractRenounced'
+import {contractImage} from './assets/wina-contract-renounced.svg'
 
 export default function App() {
   return (
@@ -19,6 +21,7 @@ export default function App() {
         <Hero heroImage={heroImage} logo={logo} />
         <About logo={logo} />
         <Liquidity />
+        <ContractRenounced  contractImage = {contractImage}/>
         <Tokenomics logo={logo}/>
         <Roadmap background={communityImage} />
         <Utilities />
