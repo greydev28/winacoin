@@ -8,6 +8,7 @@ import { Liquidity } from './components/Liquidity'
 import { Tokenomics } from './components/Tokenomics'
 import { Roadmap } from './components/Roadmap'
 import { Utilities } from './components/Utilities'
+import { FAQ } from './components/FAQ'
 import { Footer } from './components/Footer'
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
         <Tokenomics logo={logo}/>
         <Roadmap background={communityImage} />
         <Utilities />
+        <FAQ />
       </main>
       <Footer logo={logo} />
     </div>

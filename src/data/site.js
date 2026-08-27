@@ -4,6 +4,7 @@ export const navLinks = [
   { label: "Tokenomics", href: "#tokenomics" },
   { label: "Roadmap", href: "#roadmap" },
   { label: "Utilities", href: "#utilities" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 // Replace every placeholder with the project's official URLs before deployment.

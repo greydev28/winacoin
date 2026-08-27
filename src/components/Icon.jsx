@@ -1,8 +1,8 @@
 import {
   ArrowUpRight, BarChart3, BookOpen, CalendarDays, Check, ChevronDown, CircleDollarSign,
   Coins, ExternalLink, Flame, Gamepad2, Github, HandCoins, LockKeyhole,
-  Menu, MessageCircle, Rocket, ShieldCheck, Smartphone, Sparkles, WalletCards,
-  X, XIcon, Zap,
+  Menu, MessageCircle, Rocket, ShieldCheck, Smartphone, Sparkles, WalletCards, ShoppingCart,
+  X, XIcon, Zap, Network, BadgePercent
 } from 'lucide-react'
 import { XLogo, TelegramLogo, } from "@phosphor-icons/react";
 
@@ -34,11 +34,12 @@ function LeafTradeIcon({ size = 20, strokeWidth = 1.8, className = '' }) {
 
 const icons = {
   arrow: ArrowUpRight, chart: BarChart3, book: BookOpen, calendar: CalendarDays, check: Check, chevron: ChevronDown,
-  coin: CircleDollarSign, coins: Coins, external: ExternalLink, flame: Flame, game: Gamepad2,
+  coin: CircleDollarSign, coins: Coins, external: ExternalLink, flame: Flame, game: Gamepad2, percent: BadgePercent,
   github: Github, hand: HandCoins, lock: LockKeyhole, menu: Menu, telegram: TelegramLogo,
-  rocket: Rocket, shield: ShieldCheck, smartphone: Smartphone, sparkles: Sparkles,
-  wallet: WalletCards, x: XLogo, zap: Zap, real_x: XIcon,
-  leafpay: LeafTradeIcon, 
+  rocket: Rocket, shield: ShieldCheck, smartphone: Smartphone, sparkles: Sparkles, shopping: ShoppingCart,
+  wallet: WalletCards, x: XLogo, zap: Zap, real_x: XIcon, network: Network,
+  leafpay: LeafTradeIcon,
+
 }
 
 export function Icon({ name, size = 20, strokeWidth = 1.8, className = '' }) {
