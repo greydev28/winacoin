@@ -93,7 +93,7 @@ export function ContractRenounced() {
         <p className="mt-5 max-w-2xl text-sm leading-7 text-zinc-400">
           This step demonstrates WINA's intention to operate with greater
           transparency and give the community increased confidence in the
-          integrity of the token. 
+          integrity of the token.
         </p>
       </motion.div>
     </section>
