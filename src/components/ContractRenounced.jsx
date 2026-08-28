@@ -93,13 +93,7 @@ export function ContractRenounced() {
         <p className="mt-5 max-w-2xl text-sm leading-7 text-zinc-400">
           This step demonstrates WINA's intention to operate with greater
           transparency and give the community increased confidence in the
-          integrity of the token. The WINA contract is deployed on{' '}
-          <strong className="font-semibold text-zinc-200">
-            BNB Smart Chain
-          </strong>
-          , with the verified contract publicly available for blockchain
-          verification. Independent token-security data currently reports
-          the contract's ownership as likely renounced.
+          integrity of the token. 
         </p>
       </motion.div>
     </section>
